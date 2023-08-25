@@ -33,5 +33,4 @@ class QuizBrain:
             if self.best <= self.score:
                 self.best = self.score
             return True
-        else:
-            return False
+        return False
