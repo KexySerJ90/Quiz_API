@@ -29,3 +29,9 @@ class QuizInterface:
     def get_next_quest(self):
         q_text = self.quiz.next_question()
         self.canvas.itemconfig(self.question_text, text=q_text)
+
+    def good_q(self):
+        self.quiz.check_answer("True")
+
+    def bad_q(selfs):
+        self.quiz.check_answer("False")
